@@ -182,7 +182,7 @@ header h2{
     z-index: 0;
     scroll-behavior: smooth;
 }
-#mainContainer section{
+#mainContainer>section{
     width: 100%;
     height: 100%;
     position: relative;
@@ -288,4 +288,96 @@ footer{
     background: cyan;
 }
 
+#about{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+ 
+#about_image{
+    height: 70%;
+    width:30%;
+    background: url(./images/aboutMe.png) no-repeat bottom/100% auto;
+    filter: grayscale(2) opacity(0.3);
+    box-shadow: -100px -100px 50px black inset;
+    transition: all 0.5s ease-in-out;
+}
+#about_image h1{
+    color:white;
+    font-size: 4em;
+    margin: 0%;
+    position: absolute;
+    left: 50%;
+    bottom: 15%;
+    transform: translateX(-50%);
+    white-space: nowrap;
+    -webkit-text-stroke: 1px rgb(255, 255, 255);
+    transition: all 0.5s ease-in-out;
+    font-family: 'blacktoblack';
+}
+
+#about_image:hover{  filter: grayscale(0.6); }
+
+#about_image:hover h1{
+    color: transparent;
+}
+
+#about_Desc{
+    width: 50%;
+    height: 55%;
+    color: #ffffff;
+     
+}
+#about_Desc span{
+    font-size: x-small;
+    font-family: 'headingFont';
+    text-decoration: underline;
+}
+#about_Desc>b{
+    margin: 0;
+    font-size: 3em;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+#about_Desc :nth-child(5){
+    color: #00dcf0;
+}
+#about_Desc>hr{
+    width: 20%;
+    margin-left: 0;
+}
+
+#about_Desc>p{
+    font-size: small;
+    margin-left: 0;
+    font-family: 'teamspirit';
+}
+
+#about_Desc em{
+    font-size: 'AkaylaS';
+}
+
+#moreButton{
+    background: #f08c00;
+    border: 0px;
+    border-radius: 10px;
+    width: 60px;
+    cursor: pointer;
+}
+
+/* skill Section */
+
+#skills{
+    display: flex; justify-content: center; align-items: center; position: relative;
+}
+
+#skill_container{
+    width: 80%;
+    height: 70%;
+    border:1px solid rgb(176, 175, 175);
+    transition: all 0.5s ease-in-out;
+    
+}
+ 
+ 
 
